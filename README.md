@@ -1,5 +1,7 @@
+# Predictive Analytics for Early Diabetes Diagnosis  
 
-# Predictive Analytics for Early Diabetes Diagnosis
+> Machine learning models for early diabetes detection using the Pima Indians dataset.  
+> Includes data cleaning, EDA, baseline models, hyperparameter tuning, and side-by-side comparison.
 
 **Goal:** Build and compare ML models to predict diabetes from clinical indicators (Pima Indians Dataset).  
 **Highlights:** End-to-end pipeline (cleaning → EDA → baselines → tuning → comparison) with reproducible code.
@@ -25,6 +27,8 @@ Pima Indians Diabetes (UCI/Kaggle).
 | Random Forest (Tuned)        | 0.740    | 0.667     | 0.519  | 0.583    | 0.810 |
 | KNN (Tuned)                  | **0.760**| **0.698** | 0.556  | 0.619    | 0.807 |
 
+![ROC Curves](roc_curves.png)
+
 **Best by ROC-AUC:** XGBoost (0.818).  
 **Best Recall:** Balanced Logistic Regression (0.704).  
 **Best Accuracy:** KNN (0.760).  
@@ -46,3 +50,6 @@ Pima Indians Diabetes (UCI/Kaggle).
 ```bash
 pip install -r requirements.txt
 # open notebook and run all; or load models/best_model_xgboost.pkl for inference
+
+Update README with tagline and ROC curve image
+
