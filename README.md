@@ -3,6 +3,20 @@
 > Machine learning models for early diabetes detection using the Pima Indians dataset.  
 > Includes data cleaning, EDA, baseline models, hyperparameter tuning, and side-by-side comparison.
 
+## Project Overview
+
+This project applies predictive analytics to healthcare by building and comparing machine learning models for early diabetes detection.  
+Using the Pima Indians Diabetes dataset, I demonstrate an end-to-end workflow: data preprocessing (handling invalid zeros via imputation), 
+exploratory data analysis (EDA), baseline modeling, hyperparameter tuning, and performance evaluation with ROC and Precision–Recall curves.  
+
+The results highlight important trade-offs:
+- **XGBoost (Tuned)** achieved the best ROC-AUC (0.818).  
+- **Balanced Logistic Regression** achieved the highest Recall (0.704), making it more suitable in healthcare where identifying positive cases is critical.  
+- **KNN (Tuned)** had the highest Accuracy (0.760), but lower recall compared to Logistic Regression.  
+
+This project showcases not only technical ML skills (EDA, model training, tuning, evaluation) but also the **interpretation of model performance in a healthcare context**, 
+where the balance between accuracy and recall matters for patient outcomes.
+
 **Goal:** Build and compare ML models to predict diabetes from clinical indicators (Pima Indians Dataset).  
 **Highlights:** End-to-end pipeline (cleaning → EDA → baselines → tuning → comparison) with reproducible code.
 
